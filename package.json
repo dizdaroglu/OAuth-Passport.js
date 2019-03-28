@@ -1,0 +1,23 @@
+{
+  "name": "oauth-passportjs",
+  "version": "1.0.0",
+  "description": ":key: OAuth with passport.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dizdaroglu/OAuth-Passport.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dizdaroglu/OAuth-Passport.js/issues"
+  },
+  "homepage": "https://github.com/dizdaroglu/OAuth-Passport.js#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
