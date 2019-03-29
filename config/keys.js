@@ -7,6 +7,8 @@ module.exports = {
     },
     mongodb: {
         mongoURI: 'mongodb://furkan:password1@ds237475.mlab.com:37475/emaily_dev',
-
+    },
+    session: {
+        cookieKey: 'passportcookie'
     }
 }
