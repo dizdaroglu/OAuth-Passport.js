@@ -16,29 +16,29 @@
     </head>
 
     <body>
-      
-            <nav>
-                <div class="nav-wrapper">
-                <a href="#" class="brand-logo">OAuth</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <% if(user){ %>
-                    <li><a href="/auth/logout">Logout</a></li>
-                    <li><a href="/profile">Profile</a></li>    
-                    <% } else {%>
-                    <li><a href="/auth/login">Login</a></li>
-                    <% } %>
-                    <li><a href="/">Home</a></li>
-                </ul>
-                </div>
-            </nav>
-    <div class="container">
-            <header>
-                <h3>Login using..</h3>
-            </header>
-            <main>
-                <a class="waves-effect waves-light btn-small" href="/auth/google">Google+</a>
-
-            </main>
+       
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">OAuth</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <% if(user){ %>
+        <li><a href="/auth/logout">Logout</a></li>
+        <li><a href="/profile">Profile</a></li>    
+        <% } else {%>
+        <li><a href="/auth/login">Login</a></li>
+        <% } %>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <header>
+      <h3>Welcome to your profile <%= user.username %></h3>
+    </header>
+    <main>
+        <img width="150" height="150" src="<%=user.thumbnail %>" />
+        
+    </main>
   </div>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
